@@ -1,0 +1,12 @@
+<!-- app/views/sessions/new.html.erb -->
+
+<h1>Kirjaudu sisään</h1>
+
+<%= form_tag '/login' do %>
+
+  Sposti: <%= text_field_tag :email %>
+  Salasana: <%= password_field_tag :password %>
+  <%= submit_tag "Kirjaudu sisään" %>
+  <!--!<%= link_to 'Rekisteröidy', '/signup' %>--->
+
+<% end %>

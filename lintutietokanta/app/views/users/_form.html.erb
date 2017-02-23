@@ -1,0 +1,13 @@
+<%= form_for([@article, @article.users.build]) do |f| %>
+  <p>
+    <%= f.label 'Käyttäjä' %><br>
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label 'Kommentti' %><br>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,6 @@
+<h1>Hello, write down your email!</h1>
+<%= link_to 'Lintutietokantaan', controller: 'articles' %>
+
+<%= form_tag articles_path, :method => :get do %>
+  <%= text_field_tag :q, params[:q] %>
+  <% end %>

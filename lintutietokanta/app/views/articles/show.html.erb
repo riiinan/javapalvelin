@@ -1,0 +1,29 @@
+<h2>Havainto</h2>
+<p>
+  <strong>Havannoitsija:</strong>
+  <%= @article.title %>
+</p>
+
+<p>
+  <strong>Lintu:</strong>
+  <%= @article.text %>
+</p>
+
+<p>
+  <strong>Paikka:</strong>
+  <%= @article.place %>
+</p>
+
+<p>
+  <strong>Aika:</strong>
+  <%= @article.time %>
+</p>
+
+<!--<h2>Kommentit</h2>
+<%= render @article.users %>
+
+<h2>Lisää kommentti:</h2>
+<%= render 'users/form' %>-->
+
+<%= link_to 'Muokkaa', edit_article_path(@article) %> |
+<%= link_to 'Takaisin', articles_path %>
