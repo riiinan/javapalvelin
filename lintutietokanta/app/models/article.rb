@@ -1,7 +1,7 @@
 class Article < ActiveRecord::Base
   has_many :users, dependent: :destroy
   validates :title, presence: true,
-                   length: { minimum: 5 }
+                   length: { minimum: 2 }
 
   def self.search(search)
     if search
